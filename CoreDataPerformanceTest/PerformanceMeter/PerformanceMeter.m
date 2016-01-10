@@ -70,7 +70,7 @@
     dispatch_async(self.isolationQueue, ^() {
         NSArray<NSString *> *typeAndId = self.measurementToTypeAndIdMap[measureId];
         NSDate *startDate = self.currentMeasurements[measureId];
-        self.measuredResults[typeAndId.firstObject][typeAndId.lastObject] = @([endDate timeIntervalSinceDate:startDate]);
+        self.measuredResults[typeAndId.firstObject][typeAndId.lastObject] = @([endDate timeIntervalSinceDate:startDate] * 1000);
         [self.currentMeasurements removeObjectForKey:measureId];
         [self.measurementToTypeAndIdMap removeObjectForKey:measureId];
     });

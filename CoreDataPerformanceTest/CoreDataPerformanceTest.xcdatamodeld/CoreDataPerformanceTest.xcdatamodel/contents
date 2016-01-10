@@ -31,7 +31,7 @@
         <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="venueId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <relationship name="posts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="venue" inverseEntity="Post" syncable="YES"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="venue" inverseEntity="Post" syncable="YES"/>
     </entity>
     <elements>
         <element name="Post" positionX="-63" positionY="-18" width="128" height="195"/>

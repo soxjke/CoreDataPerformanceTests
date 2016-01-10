@@ -38,7 +38,9 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
-    [[RandomDataGenerator sharedObject] generateEntitiesOfClass:[NSEntityDescription entityForName:NSStringFromClass([Post class]) inManagedObjectContext:managedObjectContext] count:1000 includingRelationships:YES inContext:managedObjectContext];
+    id token = START_MEASURE_AND_GET_TOKEN(@"Object generation", @"1");
+    [[RandomDataGenerator sharedObject] generateEntitiesOfClass:[NSEntityDescription entityForName:NSStringFromClass([Post class]) inManagedObjectContext:managedObjectContext] count:100 includingRelationships:YES inContext:managedObjectContext];
+    STOP_MEASURE(token);
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
