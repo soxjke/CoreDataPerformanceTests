@@ -14,6 +14,16 @@
 		00E8DE471C41BEDD0086077C /* CoreDataPerformanceTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE451C41BEDD0086077C /* CoreDataPerformanceTest.xcdatamodeld */; };
 		00E8DE491C41BEDD0086077C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E8DE481C41BEDD0086077C /* Assets.xcassets */; };
 		00E8DE4C1C41BEDD0086077C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E8DE4A1C41BEDD0086077C /* LaunchScreen.storyboard */; };
+		00E8DE571C41C21D0086077C /* PerformanceMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE561C41C21D0086077C /* PerformanceMeter.m */; };
+		00E8DE681C41C23F0086077C /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE591C41C23F0086077C /* User+CoreDataProperties.m */; };
+		00E8DE691C41C23F0086077C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE5B1C41C23F0086077C /* User.m */; };
+		00E8DE6A1C41C23F0086077C /* Post+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE5D1C41C23F0086077C /* Post+CoreDataProperties.m */; };
+		00E8DE6B1C41C23F0086077C /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE5F1C41C23F0086077C /* Post.m */; };
+		00E8DE6C1C41C23F0086077C /* Venue+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE611C41C23F0086077C /* Venue+CoreDataProperties.m */; };
+		00E8DE6D1C41C23F0086077C /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE631C41C23F0086077C /* Venue.m */; };
+		00E8DE6E1C41C23F0086077C /* Comment+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE651C41C23F0086077C /* Comment+CoreDataProperties.m */; };
+		00E8DE6F1C41C23F0086077C /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE671C41C23F0086077C /* Comment.m */; };
+		00E8DE771C41D4BD0086077C /* RandomDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E8DE761C41D4BD0086077C /* RandomDataGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +38,27 @@
 		00E8DE481C41BEDD0086077C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00E8DE4B1C41BEDD0086077C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00E8DE4D1C41BEDD0086077C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E8DE551C41C21D0086077C /* PerformanceMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PerformanceMeter.h; path = PerformanceMeter/PerformanceMeter.h; sourceTree = "<group>"; };
+		00E8DE561C41C21D0086077C /* PerformanceMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PerformanceMeter.m; path = PerformanceMeter/PerformanceMeter.m; sourceTree = "<group>"; };
+		00E8DE581C41C23F0086077C /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataProperties.h"; path = "Models/User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		00E8DE591C41C23F0086077C /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataProperties.m"; path = "Models/User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		00E8DE5A1C41C23F0086077C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Models/User.h; sourceTree = "<group>"; };
+		00E8DE5B1C41C23F0086077C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Models/User.m; sourceTree = "<group>"; };
+		00E8DE5C1C41C23F0086077C /* Post+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Post+CoreDataProperties.h"; path = "Models/Post+CoreDataProperties.h"; sourceTree = "<group>"; };
+		00E8DE5D1C41C23F0086077C /* Post+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Post+CoreDataProperties.m"; path = "Models/Post+CoreDataProperties.m"; sourceTree = "<group>"; };
+		00E8DE5E1C41C23F0086077C /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = Models/Post.h; sourceTree = "<group>"; };
+		00E8DE5F1C41C23F0086077C /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Models/Post.m; sourceTree = "<group>"; };
+		00E8DE601C41C23F0086077C /* Venue+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Venue+CoreDataProperties.h"; path = "Models/Venue+CoreDataProperties.h"; sourceTree = "<group>"; };
+		00E8DE611C41C23F0086077C /* Venue+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Venue+CoreDataProperties.m"; path = "Models/Venue+CoreDataProperties.m"; sourceTree = "<group>"; };
+		00E8DE621C41C23F0086077C /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Venue.h; path = Models/Venue.h; sourceTree = "<group>"; };
+		00E8DE631C41C23F0086077C /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Venue.m; path = Models/Venue.m; sourceTree = "<group>"; };
+		00E8DE641C41C23F0086077C /* Comment+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Comment+CoreDataProperties.h"; path = "Models/Comment+CoreDataProperties.h"; sourceTree = "<group>"; };
+		00E8DE651C41C23F0086077C /* Comment+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Comment+CoreDataProperties.m"; path = "Models/Comment+CoreDataProperties.m"; sourceTree = "<group>"; };
+		00E8DE661C41C23F0086077C /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = Models/Comment.h; sourceTree = "<group>"; };
+		00E8DE671C41C23F0086077C /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = Models/Comment.m; sourceTree = "<group>"; };
+		00E8DE701C41C3A70086077C /* CoreDataPerformanceTest.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataPerformanceTest.pch; sourceTree = "<group>"; };
+		00E8DE751C41D4BD0086077C /* RandomDataGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RandomDataGenerator.h; path = RandomDataGenerator/RandomDataGenerator.h; sourceTree = "<group>"; };
+		00E8DE761C41D4BD0086077C /* RandomDataGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RandomDataGenerator.m; path = RandomDataGenerator/RandomDataGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +91,9 @@
 		00E8DE381C41BEDD0086077C /* CoreDataPerformanceTest */ = {
 			isa = PBXGroup;
 			children = (
+				00E8DE711C41D2AC0086077C /* RandomDataGenerator */,
+				00E8DE541C41C1E30086077C /* PerformanceMeter */,
+				00E8DE531C41C1AF0086077C /* Models */,
 				00E8DE3C1C41BEDD0086077C /* AppDelegate.h */,
 				00E8DE3D1C41BEDD0086077C /* AppDelegate.m */,
 				00E8DE3F1C41BEDD0086077C /* ViewController.h */,
@@ -78,8 +112,50 @@
 			isa = PBXGroup;
 			children = (
 				00E8DE3A1C41BEDD0086077C /* main.m */,
+				00E8DE701C41C3A70086077C /* CoreDataPerformanceTest.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00E8DE531C41C1AF0086077C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00E8DE581C41C23F0086077C /* User+CoreDataProperties.h */,
+				00E8DE591C41C23F0086077C /* User+CoreDataProperties.m */,
+				00E8DE5A1C41C23F0086077C /* User.h */,
+				00E8DE5B1C41C23F0086077C /* User.m */,
+				00E8DE5C1C41C23F0086077C /* Post+CoreDataProperties.h */,
+				00E8DE5D1C41C23F0086077C /* Post+CoreDataProperties.m */,
+				00E8DE5E1C41C23F0086077C /* Post.h */,
+				00E8DE5F1C41C23F0086077C /* Post.m */,
+				00E8DE601C41C23F0086077C /* Venue+CoreDataProperties.h */,
+				00E8DE611C41C23F0086077C /* Venue+CoreDataProperties.m */,
+				00E8DE621C41C23F0086077C /* Venue.h */,
+				00E8DE631C41C23F0086077C /* Venue.m */,
+				00E8DE641C41C23F0086077C /* Comment+CoreDataProperties.h */,
+				00E8DE651C41C23F0086077C /* Comment+CoreDataProperties.m */,
+				00E8DE661C41C23F0086077C /* Comment.h */,
+				00E8DE671C41C23F0086077C /* Comment.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		00E8DE541C41C1E30086077C /* PerformanceMeter */ = {
+			isa = PBXGroup;
+			children = (
+				00E8DE551C41C21D0086077C /* PerformanceMeter.h */,
+				00E8DE561C41C21D0086077C /* PerformanceMeter.m */,
+			);
+			name = PerformanceMeter;
+			sourceTree = "<group>";
+		};
+		00E8DE711C41D2AC0086077C /* RandomDataGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				00E8DE751C41D4BD0086077C /* RandomDataGenerator.h */,
+				00E8DE761C41D4BD0086077C /* RandomDataGenerator.m */,
+			);
+			name = RandomDataGenerator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +228,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E8DE6D1C41C23F0086077C /* Venue.m in Sources */,
+				00E8DE6E1C41C23F0086077C /* Comment+CoreDataProperties.m in Sources */,
+				00E8DE681C41C23F0086077C /* User+CoreDataProperties.m in Sources */,
+				00E8DE691C41C23F0086077C /* User.m in Sources */,
+				00E8DE771C41D4BD0086077C /* RandomDataGenerator.m in Sources */,
 				00E8DE411C41BEDD0086077C /* ViewController.m in Sources */,
+				00E8DE6C1C41C23F0086077C /* Venue+CoreDataProperties.m in Sources */,
 				00E8DE471C41BEDD0086077C /* CoreDataPerformanceTest.xcdatamodeld in Sources */,
+				00E8DE6B1C41C23F0086077C /* Post.m in Sources */,
+				00E8DE6F1C41C23F0086077C /* Comment.m in Sources */,
 				00E8DE3E1C41BEDD0086077C /* AppDelegate.m in Sources */,
+				00E8DE6A1C41C23F0086077C /* Post+CoreDataProperties.m in Sources */,
+				00E8DE571C41C21D0086077C /* PerformanceMeter.m in Sources */,
 				00E8DE3B1C41BEDD0086077C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$SRCROOT/$(TARGET_NAME)/$(TARGET_NAME).pch";
 				INFOPLIST_FILE = CoreDataPerformanceTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soxjke.CoreDataPerformanceTest;
@@ -276,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$SRCROOT/$(TARGET_NAME)/$(TARGET_NAME).pch";
 				INFOPLIST_FILE = CoreDataPerformanceTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soxjke.CoreDataPerformanceTest;

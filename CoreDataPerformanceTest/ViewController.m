@@ -10,18 +10,24 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) NSString *measureId;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.measureId = START_MEASURE_AND_GET_TOKEN(@"Appearance transition", NSStringFromClass([self class]));
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    STOP_MEASURE(self.measureId);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^() {
+        PRINT_METRICS;
+    });
 }
 
 @end

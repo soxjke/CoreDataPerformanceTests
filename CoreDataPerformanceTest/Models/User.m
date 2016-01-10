@@ -1,14 +1,15 @@
 //
-//  ViewController.h
+//  User.m
 //  CoreDataPerformanceTest
 //
 //  Created by Petro Korienev on 1/10/16.
 //  Copyright © 2016 Petro Korienev. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "User.h"
 
-@interface ViewController : UIViewController
+@implementation User
+
+// Insert code here to add functionality to your managed object subclass
 
 @end
-

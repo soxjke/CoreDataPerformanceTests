@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Post.h"
+#import "RandomDataGenerator.h"
 
 @interface AppDelegate ()
 
@@ -35,6 +37,8 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    [[RandomDataGenerator sharedObject] generateEntitiesOfClass:[NSEntityDescription entityForName:NSStringFromClass([Post class]) inManagedObjectContext:managedObjectContext] count:1000 includingRelationships:YES inContext:managedObjectContext];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
@@ -87,6 +91,7 @@
         // Replace this with code to handle the error appropriately.
         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
         abort();
     }
     
